@@ -1,0 +1,17 @@
+\begin{exercise}
+	Water flows from the bottom of a storage tank at a rate of $r\left(t\right)=200-4t$ liters per minute, where $0\leq~t\leq~50$. Find the amount of water that flows from the tank during the first $10$ minutes.
+\end{exercise}
+\begin{solution}
+	The net change in the volume of water in the tank during the first ten minutes is equal to the integral of the rate at which the water was flowing out of the tank, from $t=0$ to $t=10$.
+	\begin{align*}
+	\Delta V&=\int_{0}^{10} r\left(t\right)dt\\
+	&=\int_{0}^{10} 200-4t dt\\
+	&=200\int_{0}^{10}dt -4\int_{0}^{10} t\: dt\\
+	&=\left[200t\big|_0^{10}\right] -4\left[\frac{1}{2}t^2\big|_{0}^{10}\right] \\
+	&=\left[200\left(10\right) - 200\left(0\right)\right]-4\left[\frac{1}{2}\left(10\right)^2 - \frac{1}{2}\left(0\right)^2\right]\\
+	&=2000-4\left(50\right)\\
+	&=2000-200\\
+	&=1800
+	\end{align*}
+	Therefore, $1800$ liters of water flowed out of the tank in the first ten minutes.
+\end{solution}
