@@ -1,0 +1,24 @@
+\begin{exercise}
+	\index{function!Cobb-Douglas}
+	Verify for the Cobb-Douglas production function
+	\begin{equation*}
+	P\left( L, K \right) = 1.01L^{0.75}K^{0.25}
+	\end{equation*}
+	discussed in Example 3 that the production will be doubled if both the amount of labor and the amount of capital are doubled. Determine whether this is also true for the general production function:
+	\begin{equation}
+	\label{equation-Cobb-Douglas}
+	P\left( L, K \right) = bL^{\alpha}K^{1-\alpha}
+	\end{equation}
+\end{exercise}
+\begin{solution}
+	We will analyze the general Cobb-Douglas production function to determine whether a doubling of both labor and capital results in a doubling of production.
+	\begin{align*}
+	2 P\left( L, K \right) &\overset{?}{=} b \left( 2L \right)^{\alpha} \left( 2K \right)^{1 - \alpha} \\
+	&\overset{?}{=} b2^{\alpha}L^{\alpha}2^{1-\alpha}K^{1-\alpha} \\
+	&\overset{?}{=} \left( 2^{\alpha} \cdot 2^{1-\alpha} \right) bL^{\alpha}K^{1-\alpha} \\
+	&\overset{?}{=} \left( 2^{\left( \alpha \right) + \left( 1 - \alpha \right)} \right) bL^{\alpha}K^{1-\alpha} \\
+	&\overset{?}{=} \left( 2^{1} \right) bL^{\alpha}K^{1-\alpha} \\
+	&\overset{?}{=} 2bL^{\alpha}K^{1-\alpha}
+	\end{align*}
+	Indeed, we can conclude that for any arbitrary Cobb-Douglas production function $P : \mathbb{R}^{+} \times \mathbb{R}^{+} \to \mathbb{R}$, a doubling of both the labor and capital input parameters will result in a doubling of the roduction output.
+\end{solution}

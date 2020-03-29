@@ -1,0 +1,25 @@
+\begin{exercise}
+	The kinetic energy of a body with mass $m$ and velocity $v$ is $K = \frac{1}{2}mv^2$. Show that
+	\begin{equation*}
+	\frac{\partial K}{\partial m} \frac{\partial^{2} K}{\partial v^2} = K
+	\end{equation*}
+\end{exercise}
+\begin{solution}
+	We begin by calculating $\frac{\partial^2 K}{\partial v^2}$.
+	\begin{align*}
+	K &= \frac{1}{2}mv^2 \\
+	\frac{\partial K}{\partial v} &= mv \\
+	\frac{\partial^2 K}{\partial v^2} &= m
+	\end{align*}
+	We now proceed by calculating $\frac{\partial K}{\partial m}$.
+	\begin{align*}
+	K &= \frac{1}{2}mv^2 \\
+	\frac{\partial K}{\partial m} &= \frac{1}{2}v^2
+	\end{align*}
+	We now simply combine our two components to produce our final answer.
+	\begin{align*}
+	\left( \frac{\partial K}{\partial M} \right) \cdot \left( \frac{\partial^2 K}{\partial v^2} \right) &= K \\
+	\left( m \right) \cdot \left( \frac{1}{2}v^2 \right) &= K \\
+	\frac{1}{2}mv^2 &= K
+	\end{align*}
+\end{solution}

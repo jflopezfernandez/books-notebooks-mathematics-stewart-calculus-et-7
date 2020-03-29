@@ -1,0 +1,36 @@
+\section{Directional Derivatives and the Gradient Vector}
+\begin{definition}[Directional Derivative]
+	If $z = f\left(x,y\right)$, then the partial derivatives $f_x$ and $f_y$ are defined as
+	\begin{equation*}
+	f_x\left(x_0,y_0\right) = \lim\limits_{h \to 0} \frac{f\left(x_0 + h, y_0\right) - f\left(x_0,y_0\right)}{h}
+	\end{equation*}
+	\begin{equation*}
+	f_y\left(x_0,y_0\right)=\lim\limits_{h \to 0} \frac{f\left(x_0, y_0 + h\right) - f\left(x_0,y_0\right)}{h}
+	\end{equation*}
+	and represents the rates of change of $z$ in the $x$- and $y$- directions, that is, in the directions of the unit vectors $\mathbf{i}$ and $\mathbf{j}$.
+\end{definition}
+\begin{definition}[The Gradient Vector]
+	\index{gradient}
+	If $f$ is a function of two variables $x$ and $y$, then the \textbf{gradient} of $f$ is the vector function $\nabla f$ defined by
+	\begin{equation}
+	\label{equation-gradient-vector}
+	\nabla f\left(x,y\right) = \left\langle f_x\left(x,y\right), f_y\left(x,y\right) \right\rangle = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j}
+	\end{equation}
+\end{definition}
+\begin{definition}
+	The directional derivative of a differentiable function can be written as
+	\begin{equation}
+	\label{directional-derivative-gradient-vector}
+	D_{\mathbf{u}}f\left(x,y\right) = \nabla f\left(x,y\right) \cdot \mathbf{u}
+	\end{equation}
+\end{definition}
+\begin{theorem}
+	Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_uf\left(\mathbf{x}\right)$ is $\left| \nabla f\left(\mathbf{x}\right) \right|$ and it occurs when $\mathbf{u}$ has the same direction as the gradient vector $\nabla f\left(\mathbf{x}\right)$.
+\end{theorem}
+\begin{definition}
+	If $\nabla f\left(x_0, y_0, z_0\right) \neq \mathbf{0}$, it is natural to define the \textbf{tangent plane to the level surface} $F\left(x,y,z\right) = k$ at $P\left(x_0,y_0,z_0\right)$ as the plane that passes through $P$ and has normal vector $\nabla F\left(x_0,y_0,z_0\right)$.
+	\begin{equation}
+	\label{equation-tangent-plane-level-surface}
+	F_x\left(x_0,y_0,z_0\right)\left(x-x_0\right)+F_y\left(x_0,y_0,z_0\right)\left(y-y_0\right)+F_z\left(x_0,y_0,z_0\right)\left(z-z_0\right)=0
+	\end{equation}
+\end{definition}
