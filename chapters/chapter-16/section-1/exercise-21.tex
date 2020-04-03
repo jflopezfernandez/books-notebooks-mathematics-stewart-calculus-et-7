@@ -1,0 +1,34 @@
+\begin{exercise}
+	Find the gradient vector field of $f$.
+	\begin{equation*}
+	f\left(x,y\right)=xe^{xy}
+	\end{equation*}
+\end{exercise}
+\begin{solution}
+	The equation for the gradient vector field of $f$ is
+	\begin{equation*}
+	\nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j}.
+	\end{equation*}
+	We begin by finding the first partial derivative with respect to $x$.
+	\begin{align*}
+	\frac{\partial f}{\partial x} &= \frac{\partial}{\partial x}\left( xe^{xy} \right) \\
+	&= f^{\prime}\left(x\right)g\left(x\right) + f\left(x\right)g^{\prime}\left(x\right), \ \text{for $f(x)=x$ and $g(x)=e^{xy}$}\\
+	&= \left(1\right)\left(e^{xy}\right) + \left(x\right)\left(ye^{xy}\right) \\
+	&= e^{xy} + xye^{xy} \\
+	&= e^{xy}\left(1 + xy\right)
+	\end{align*}
+	We now find the first partial derivative with respect to $y$.
+	\begin{align*}
+	\frac{\partial f}{\partial y} &= \frac{\partial}{\partial y}\left(xe^{xy}\right) \\
+	&= \left(xe^{xy}\right)\left(x\right) \\
+	&= x^2e^{xy}
+	\end{align*}
+	We thus conclude that the gradient vector field $\nabla f$ of the function $f$ defined by
+	\begin{equation*}
+	f\left(x,y\right)=xe^{xy}
+	\end{equation*}
+	is
+	\begin{equation*}
+	\nabla f = \left[ e^{xy}\left(1+xy\right) \right]\mathbf{i} + \left[ x^2e^{xy} \right]\mathbf{j}.
+	\end{equation*}
+\end{solution}

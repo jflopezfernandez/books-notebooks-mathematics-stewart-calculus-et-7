@@ -1,0 +1,25 @@
+\begin{exercise}
+	Find the gradient vector field of $f$.
+	\begin{equation*}
+	f\left(x,y\right)=\tan\left(3x-4y\right)
+	\end{equation*}
+\end{exercise}
+\begin{solution}
+	The formula for the gradient vector field of a two-dimensional function $f$ is
+	\begin{equation*}
+	\nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j}.
+	\end{equation*}
+	We thus proceed by deriving the first partial derivatives of $f$ with respect to $x$ and $y$.
+	\begin{align*}
+	\frac{\partial f}{\partial x} &= \frac{\partial}{\partial x}\left( \tan \left(3x-4y\right)\right) \\
+	\intertext{Let $u = 3x-4y$.}
+	\frac{\partial f}{\partial x} &= \frac{\partial f}{\partial u} \frac{\partial u}{\partial x} \\
+	&= \frac{\partial}{\partial u}\left( \tan\left(u\right) \right) \cdot \frac{\partial}{\partial x}\left( 3x-4y \right) \\
+	&= \sec^2\left( u \right) \cdot \left( 3 \right) \\
+	&= 3\sec^2\left( 3x-4y \right)
+	\end{align*}
+	By the same reasoning, $\frac{\partial f}{\partial y} = -4\sec^2\left(3x-4y\right)$. Therefore, the gradient vector field $\nabla f$ for $f$ is defined to be
+	\begin{equation*}
+	\nabla f = \left[ 3\sec^2\left(3x-4y\right) \right]\mathbf{i} - \left[ 4\sec^2\left(3x-4y\right) \right]\mathbf{j}.
+	\end{equation*}
+\end{solution}

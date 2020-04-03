@@ -1,0 +1,26 @@
+\section{Line Integrals}
+\begin{definition}
+	\index{line integral}
+	\label{definition-16.2.2}
+	If $f$ is defined on a smooth curve $C$ given by Equation~1, then the \textbf{line integral of $f$ along $C$} is
+	\begin{equation}
+	\int_C f\left(x,y\right)ds = \lim\limits_{n \to \infty} \sum_{i=1}^{n} f\left(x_i^*,y_i^*\right)\Delta s_i
+	\end{equation}
+	if this limit exists.
+\end{definition}
+\begin{definition}
+	If $f$ is a continuous function, then the limit in Definition~\ref{definition-16.2.2} always exists and the following formula can be used to evaluate the line integral.
+	\begin{equation}
+	\int_C f\left(x,y\right)ds = \int_a^b f\left(x(t),y(t)\right)\sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \ dt
+	\end{equation}
+\end{definition}
+\begin{definition}
+	Let $\mathbf{F}$ be a continuous vector field defined on a smooth curve $C$ given by a vector function $\mathbf{r}\left(t\right)$, $a \leq t \leq b$. Then the \textbf{line integral of $\mathbf{F}$ along $C$} is
+	\begin{equation}
+	\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}\left(\mathbf{r}\left(t\right)\right) \  \mathbf{\cdot} \  \mathbf{r}^{\prime}\left(t\right) dt = \int_C \mathbf{F} \ \mathbf{\cdot} \ \mathbf{T} \  ds
+	\end{equation}
+\end{definition}
+
+\subsection{Exercises}
+Evaluate the line integral, where $C$ is the given curve.
+\input{chapters/chapter-16/section-2/exercise-1.tex}
